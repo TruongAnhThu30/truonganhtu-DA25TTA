@@ -1,0 +1,55 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.navbar{
+    background:#000 !important;
+    box-shadow:0 2px 15px rgba(168,85,247,.2);
+}
+
+/* Logo */
+.navbar-brand{
+    color:#a855f7 !important;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:15px;
+    transition:.3s;
+}
+
+/* Nút menu điện thoại */
+.navbar-toggler{
+    border:1px solid #a855f7;
+}
+.contact-header{
+    background:#111;
+    padding:60px 20px;
+}
+
+.contact-header h1{
+    color:#a855f7;
+    font-weight:bold;
+}
+
+.contact-header p{
+    color:#ccc;
+}
+
+
+.btn-warning{
+    background:#a855f7;
+    border:none;
+    color:white;
+    font-weight:bold;
+}
+
+.btn-warning:hover{
+    background:#9333ea;
+}
+
