@@ -1,16 +1,21 @@
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#0f0f0f;
+    color:white;
+}
+
+/* Navbar */
 .navbar{
     background:#000 !important;
     box-shadow:0 2px 15px rgba(168,85,247,.2);
 }
 
-/* Logo */
 .navbar-brand{
     color:#a855f7 !important;
     font-size:1.8rem;
@@ -23,13 +28,30 @@
     transition:.3s;
 }
 
-/* Nút menu điện thoại */
-.navbar-toggler{
+.nav-link:hover,
+.nav-link.active{
+    color:#a855f7 !important;
+}
+
+/* Dropdown */
+.dropdown-menu{
+    background:#111;
     border:1px solid #a855f7;
 }
+
+.dropdown-item{
+    color:white;
+}
+
+.dropdown-item:hover{
+    background:#a855f7;
+    color:white;
+}
+
+/* Header */
 .contact-header{
     background:#111;
-    padding:60px 20px;
+    border-bottom:2px solid #a855f7;
 }
 
 .contact-header h1{
@@ -41,15 +63,63 @@
     color:#ccc;
 }
 
+/* Box */
+.contact-info,
+.contact-form{
+    background:#181818;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid #a855f7;
+    box-shadow:0 0 20px rgba(168,85,247,.2);
+}
 
+.contact-info h3,
+.contact-form h3{
+    color:#a855f7;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+}
+
+/* Form */
+.form-control{
+    background:#222;
+    border:1px solid #333;
+    color:white;
+}
+
+.form-control:focus{
+    background:#222;
+    color:white;
+    border-color:#a855f7;
+    box-shadow:0 0 10px rgba(168,85,247,.4);
+}
+
+.form-control::placeholder{
+    color:#aaa;
+}
+
+/* Button */
 .btn-warning{
     background:#a855f7;
     border:none;
     color:white;
     font-weight:bold;
+    border-radius:30px;
+    padding:12px;
 }
 
 .btn-warning:hover{
     background:#9333ea;
 }
 
+/* Footer */
+footer{
+    background:#000;
+}
+
+footer h5{
+    color:#a855f7;
+}
