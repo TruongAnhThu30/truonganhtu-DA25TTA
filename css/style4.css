@@ -5,118 +5,184 @@
 }
 
 body{
-    background:#0f0f0f;
-    color:white;
+    background:#F4F7F8;
+    color:#1F2937;
     font-family:'Segoe UI',sans-serif;
 }
 
-/* Navbar */
+
+
 .navbar{
-    background:#000 !important;
-    box-shadow:0 2px 15px rgba(168,85,247,.3);
+    background:#ffffff !important;
+    padding:15px 0;
+    border-bottom:2px solid #14B8A6;
+    box-shadow:0 5px 20px rgba(20,184,166,.12);
 }
 
 .navbar-brand{
-    color:#a855f7 !important;
+    color:#14B8A6 !important;
     font-size:1.8rem;
-    font-weight:bold;
+    font-weight:700;
+    letter-spacing:1px;
+    transition:.3s;
 }
 
+.navbar-brand:hover{
+    color:#0F9E8A !important;
+}
+
+/* Menu */
+
 .nav-link{
-    color:white !important;
+    color:#374151 !important;
+    font-weight:600;
+    margin-left:18px;
+    position:relative;
     transition:.3s;
+}
+
+
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:3px;
+    background:#14B8A6;
+    border-radius:20px;
+    transition:.35s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+    width:100%;
 }
 
 .nav-link:hover,
 .nav-link.active{
-    color:#a855f7 !important;
+    color:#14B8A6 !important;
 }
 
-/* Tiêu đề */
+
 .page-title{
     text-align:center;
     padding:60px 20px;
 }
 
 .page-title h1{
-    color:#a855f7;
-    font-weight:bold;
+    color:#1F2937;
+    font-size:3rem;
+    font-weight:700;
+    position:relative;
+    display:inline-block;
+}
+
+.page-title h1::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#14B8A6;
+    display:block;
+    margin:12px auto 0;
+    border-radius:20px;
 }
 
 .page-title p{
-    color:#bbb;
+    color:#6B7280;
+    margin-top:15px;
 }
 
-/* Card sản phẩm */
 .card{
-    background:#181818;
-    border:none;
-    border-radius:15px;
+    background:#ffffff;
+    border:2px solid #E5F7F5;
+    border-radius:22px;
     overflow:hidden;
-    transition:.4s;
+    transition:.35s;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
 .card:hover{
     transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(168,85,247,.4);
+    border-color:#14B8A6;
+    box-shadow:0 18px 40px rgba(20,184,166,.20);
 }
 
 .card-img-top{
-    height:280px;
+    height:300px;
     object-fit:cover;
+    transition:.4s;
+}
+
+.card:hover .card-img-top{
+    transform:scale(1.05);
 }
 
 .card-body{
-    color:white;
+    color:#374151;
+    text-align:center;
 }
 
 .card h5{
-    color:white;
-    font-weight:600;
+    color:#1F2937;
+    font-weight:700;
 }
 
 .text-muted{
-    color:#bbb !important;
+    color:#6B7280 !important;
 }
 
 .text-danger{
-    color:#a855f7 !important;
+    color:#14B8A6 !important;
+    font-size:1.2rem;
+    font-weight:700;
 }
 
-/* Link sản phẩm */
+
 a{
     text-decoration:none;
 }
 
-/* Footer */
+
+
 footer{
-    background:#000;
-    color:white;
+    background:#ffffff;
+    color:#374151;
     text-align:center;
-    padding:30px 0;
+    padding:40px 0;
     margin-top:50px;
+    border-top:2px solid #14B8A6;
 }
 
 footer h5{
-    color:#a855f7;
+    color:#14B8A6;
+    font-weight:700;
 }
 
-/* Dropdown */
+footer p{
+    color:#6B7280;
+}
+
+
 .dropdown-menu{
-    background:#111;
-    border:1px solid #a855f7;
+    background:#ffffff;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
 }
 
 .dropdown-item{
-    color:white;
+    color:#374151;
 }
 
 .dropdown-item:hover{
-    background:#a855f7;
-    color:white;
+    background:#14B8A6;
+    color:#ffffff;
 }
 
-/* Responsive */
+
+
 @media(max-width:768px){
 
     .card-img-top{
@@ -124,6 +190,6 @@ footer h5{
     }
 
     .page-title h1{
-        font-size:2rem;
+        font-size:2.2rem;
     }
 }
